@@ -90,7 +90,7 @@ def convert_equation_for_sympify(equation_str):
     return equation_str
 
 
-# @app.route('/analyze', methods=['POST'])
+@app.route('/routh', methods=['POST'])
 def analyze_stability_api():
     data = request.json
     polynomial_str = data.get('equation', '')
